@@ -4,9 +4,11 @@ public/
 db.json
 .deploy*/
 
+## GATSBY / NODE / PNPM ##
 # package.json
 node_modules/
 pnpm-lock.yaml
+.cache/
 
 ### Atom / VS(C) ###
 .ftpconfig

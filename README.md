@@ -15,7 +15,15 @@ Source of the https://www.compscia.com website.
     ```bash
     > npm install -g pnpm
     ```
- 3. Install dependencies with `pnpm`:
+ 3. Install [Gatsby CLI](https://www.gatsbyjs.com/):
+    ```bash
+    > pnpm install -g gatsby-cli
+    ```
+ 4. Install dependencies with `pnpm`:
     ```bash
     > pnpm install
+    ```
+ 5. Run Gatsby and have fun!
+    ```bash
+    > gatsby develop
     ```
