@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Site of the Computer Science Association",
   "scripts": {
+	"preinstall": "npx only-allow pnpm",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",

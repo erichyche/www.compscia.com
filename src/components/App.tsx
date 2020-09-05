@@ -4,8 +4,13 @@ export interface AppProps {
     name: string
 }
 
-export default class App extends React.Component<AppProps> {
+export default class App extends React.Component<AppProps, any> {
     render() {
-        return <div>Welcome to Preact!</div>;
+        return(
+            <>
+                <h1>Welcome to React, { this.props.name }!</h1>
+                { this.props.children }
+            </>
+        );
     }
 };
