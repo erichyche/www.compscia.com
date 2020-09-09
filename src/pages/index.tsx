@@ -1,10 +1,15 @@
 import React from 'react';
-import App from '../components/App';
+import { Link } from 'gatsby';
+import App from '../components/app';
+import Layout from '../components/layout';
 
-export default function Main() {
+export default () => {
     return(
-        <App name="John">
-            <p>There is plenty that you can do.</p>
-        </App>
+        <Layout>
+            <Link to='/about'>About</Link>
+            <App name="John">
+                <p>There is plenty that you can do.</p>
+            </App>
+        </Layout>
     );
 }
