@@ -7,24 +7,29 @@ type Page = {
     caption: string
 };
 
-export default function Header() {
+const Header = () => {
+    const seasonal = false;
     const pages: Page[] = [
         { link: "/", caption: "Home" },
+        { link: "/programs", caption: "Programs" },
+        { link: "/resources", caption: "Resources" },
         { link: "/about", caption: "About" },
         { link: "/contact", caption: "Contact" },
     ];
     return (
         <header>
-            <img />
-            <nav>
-                <ul>
-                    { pages.map(
-                        (page) => (
-                        <li><Link to={ page.link }>{ page.caption }</Link></li>
-                        )
-                    ) }
-                </ul>
+            <Link to='/'><img className="logo" src="/images/logo-transparent.png" /></Link>
+            { seasonal
+                ? <button>VOTE NOW</button>
+                : false
+            }
+            <nav className="navbar">
+                { pages.map(
+                    (page) => (<Link to={ page.link }>{ page.caption }</Link>)
+                ) }
             </nav>
         </header>
     );
 }
+
+export default Header;
