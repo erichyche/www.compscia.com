@@ -1,5 +1,11 @@
 // 3b92ef 10 6aacf3
 $link-color: #3b92ef;
+$bg-color: #303436;
+
+@mixin square($size) {
+	height: $size;
+	width: $size;
+}
 
 footer {
 	position: absolute;
@@ -9,29 +15,35 @@ footer {
 	display: flex;
 	flex-flow: column wrap;
 	align-content: stretch;
-	background-color: #2b2f31;
+	background-color: $bg-color;
 	.social-icons {
 		padding-top: 8px;
 		padding-bottom: 4px;
-		font-size: 25px;
+		font-size: 24px;
 		text-align: center;
 		.icon {
-			color: $link-color;
+			@include square(45px);
 			text-align: center;
 			display: inline-block;
-			width: 50px;
-			height: 50px;
-			line-height: 47px;
+			line-height: 44px;
 			margin-left: 8px;
 			border-radius: 100%;
+
+			color: $link-color;
 			border: 2px solid $link-color;
+			&:hover {
+				$hover-color: lighten($link-color, 8);
+				color: $hover-color;
+				background-color: darken($bg-color, 2);
+				border-color: $hover-color;
+			}
 		}
 	}
 	.copyright {
 		text-align: center;
 		color: #fff;
 		padding: 8px;
-		background-color: darken(#2b2f31, 3);
+		background-color: darken($bg-color, 5);
 		font-weight: 700;
 	}
 }

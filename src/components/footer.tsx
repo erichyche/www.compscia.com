@@ -14,7 +14,6 @@ const socialLinks = [
     {
         name: 'instagram-square',
         link: 'https://www.instagram.com/comp.scia'
-
     },
     {
         name: 'github-square',
@@ -31,7 +30,7 @@ const Footer = () => {
                 )) }
             </div>
             <div className="copyright">
-                <small>&copy; 2019-{ (new Date()).getFullYear() } Computer Science Association</small>
+                <small>&copy; 2019 &ndash; { (new Date()).getFullYear() } Computer Science Association</small>
             </div>
         </footer>
     );
