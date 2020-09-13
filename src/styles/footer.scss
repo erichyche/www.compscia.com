@@ -1,9 +1,37 @@
+// 3b92ef 10 6aacf3
+$link-color: #3b92ef;
+
 footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	display: flex;
-	flex-flow: row wrap;
 	width: 100%;
-	justify-content: center;
+	display: flex;
+	flex-flow: column wrap;
+	align-content: stretch;
+	background-color: #2b2f31;
+	.social-icons {
+		padding-top: 8px;
+		padding-bottom: 4px;
+		font-size: 25px;
+		text-align: center;
+		.icon {
+			color: $link-color;
+			text-align: center;
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			line-height: 47px;
+			margin-left: 8px;
+			border-radius: 100%;
+			border: 2px solid $link-color;
+		}
+	}
+	.copyright {
+		text-align: center;
+		color: #fff;
+		padding: 8px;
+		background-color: darken(#2b2f31, 3);
+		font-weight: 700;
+	}
 }
