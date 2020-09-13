@@ -25,7 +25,7 @@ const Header = () => {
             }
             <nav className="navbar">
                 { pages.map(
-                    (page) => (<Link to={ page.link }>{ page.caption }</Link>)
+                    (page, i) => (<Link to={ page.link } key={i}>{ page.caption }</Link>)
                 ) }
             </nav>
         </header>
