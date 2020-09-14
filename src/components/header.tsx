@@ -17,7 +17,7 @@ const Header = () => {
         { link: "/contact", caption: "Contact" },
     ];
     return (
-        <header>
+        <header id='site-head'>
             <Link to='/'><img className="logo" src="/images/logo-transparent.png" /></Link>
             { seasonal
                 ? <button>VOTE NOW</button>
