@@ -8,9 +8,10 @@ $bg-color: #303436;
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	// position: absolute;
+	// bottom: 0;
+	// left: 0;
+	align-self: end;
 	width: 100%;
 	display: flex;
 	flex-flow: column wrap;
