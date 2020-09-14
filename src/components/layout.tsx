@@ -2,8 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
-import '../styles/main.scss';
 import '../styles/reset.scss';
+import '../styles/layout.scss';
 
 export default class Layout extends React.Component<any, any> {    
     

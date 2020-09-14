@@ -1,3 +1,20 @@
+html * { box-sizing: inherit; }
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+html, body {
+    box-sizing: border-box;
+    position: relative;
+    font-size: 16px;
+    font-family: Arial, Verdana, sans-serif;
+}
+html { height: 100vh; }
+body {
+	position: relative;
+    margin: 0;
+    min-height: 100%;
+}
+
 @for $i from 1 through 6 {
 	h#{$i} {
 		font-size: 64px / $i;
