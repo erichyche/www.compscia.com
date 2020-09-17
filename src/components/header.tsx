@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import '../styles/header.module.scss';
+import styles from '../styles/header.module.scss';
 
 type Page = {
     link: string,
@@ -17,13 +17,13 @@ const Header = () => {
         { link: "/contact", caption: "Contact" },
     ];
     return (
-        <header id='site-head'>
-            <Link to='/'><img className="logo" src="/images/logo-transparent.png" /></Link>
+        <header id={styles.siteHead}> 
+            <Link to='/'><img className={styles.logo} src="/images/logo-transparent.png" /></Link>
             { seasonal
                 ? <button>VOTE NOW</button>
                 : false
             }
-            <nav className="navbar">
+            <nav className={styles.navbar}>
                 { pages.map(
                     (page, i) => (<Link to={ page.link } key={i}>{ page.caption }</Link>)
                 ) }
