@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/footer.scss';
+import style from '../styles/footer.module.scss';
 
 const socialLinks = [
     {
@@ -23,13 +23,13 @@ const socialLinks = [
 
 const Footer = () => {
     return (
-        <footer>
-            <div className="social-icons">
+        <footer id={style.siteFoot}>
+            <div className={style.socialIcons}>
                 { socialLinks.map((link,i) => (
-                    <a href={link.link} className="icon" key={i}><i className={"fab fa-".concat(link.name)}></i></a>
+                    <a href={link.link} className={style.icon} key={i}><i className={"fab fa-".concat(link.name)}></i></a>
                 )) }
             </div>
-            <div className="copyright">
+            <div className={style.copyright}>
                 <small>&copy; 2019 &ndash; { (new Date()).getFullYear() } Computer Science Association</small>
             </div>
         </footer>
