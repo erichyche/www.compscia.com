@@ -1,9 +1,8 @@
 import React from 'react';
-import Layout from '../components/layout';
 
 export default () => {
     return (
-        <Layout>
+        <>
             <section style={{
                 padding: '32px',
                 textAlign: 'center',
@@ -19,7 +18,7 @@ export default () => {
                     padding: '8px 16px',
                     fontSize: '20px',
                     lineHeight: 1.5,
-                    width: '1080px',
+                    maxWidth: '1080px',
                     color: 'white',
                     backgroundColor: '#00000088'
                 }}>The Computer Science Association was founded by Al Tareen and Eduardo Moya in
@@ -108,6 +107,6 @@ export default () => {
                         </div>
                     </div>
                 </div>
-        </Layout>
+        </>
     );
 }
