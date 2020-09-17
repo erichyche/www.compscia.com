@@ -9,6 +9,7 @@ export default () => {
             <Link to='/about'>About</Link>
             <App name="John">
                 <p>There is plenty that you can do.</p>
+                <footer>Hello</footer>
             </App>
         </Layout>
     );
