@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/footer.module.scss';
+import styles from '../styles/components/footer.module.scss';
 
 const socialLinks = [
     {
@@ -30,7 +30,9 @@ const Footer = () => {
                 )) }
             </div>
             <div className={styles.copyright}>
-                <small>&copy; 2019 &ndash; { (new Date()).getFullYear() } Computer Science Association</small>
+                <small>&copy; 2019 &ndash; { (new Date()).getFullYear() } Computer Science Association
+                    | Made with <i style={{color: 'red'}} className="fas fa-heart"></i> by
+                    <a style={{textDecoration: 'none', color: '#fff'}} href="https://github.com/avonbied"> @avonbied</a></small>
             </div>
         </footer>
     );
