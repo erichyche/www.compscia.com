@@ -27,3 +27,12 @@ Source of the https://www.compscia.com website.
     ```bash
     > gatsby develop
     ```
+
+## Contributing
+
+ 1. Fork the `develop` branch of the project on Github.
+ 2. Implement features, fix issues, update documentation.
+ 3. Run tests if available! (Feel free to write tests 😉).
+ 4. Squash your commits into a single commit with git's interactive rebase.
+ 5. Push your branch to your fork on Github.
+ 6. Open a pull request from your fork into the `develop` branch.
