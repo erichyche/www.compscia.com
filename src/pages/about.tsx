@@ -4,7 +4,7 @@ export default () => {
     return (
         <>
             <section style={{
-                padding: '32px',
+                
                 textAlign: 'center',
                 backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/datacenter.jpg")',
                 backgroundSize: 'cover'
@@ -64,49 +64,6 @@ export default () => {
                     <p style={{fontSize: '16px',color: 'rgb(8,15,51)',marginTop: '-8px',paddingBottom: '26px'}}><strong>CSA visions a future where our members become futurists and creates disruption in industries through digitalization or automation.</strong></p>
                 </div>
             </section>
-                <div className="container">
-                    <div className="row row-fitur">
-                        <div className="col-sm-4 col-md-4 waves-effect kolom-a" data-aos="flip-right">
-                            <div className="fitur-a"></div>
-                            <div>
-                                <h4 className="text-center heading-fitur"
-                                    style={{
-                                        fontSize: '40px',
-                                        height: '80px',
-                                        color: 'rgb(19,13,79)'}}><strong>MISSION &nbsp;</strong></h4>
-                                <img className="flex-wrap" src="assets/img/Mission.png" style={{
-                                    width: '70px',
-                                    paddingRight: 0}} />
-                                <p className="text-center paragraf-fitur"
-                                    style={{
-                                        color: 'rgb(8,15,51)',
-                                        fontSize: '16px',
-                                        marginTop: '15px'}}>
-                                    <strong>CSA TRAINS, PREPARES, AND UNITES STUDENTS FOR THE EVER-CHANGING TECHNOLOGICAL FRONTIERS TO ENSURE THAT OUR MEMBERS ARE THE PIONEERS OF NEW TECHNOLOGIES.</strong><br/></p>
-                                    <div className="separator-fitur" style={{paddingTop: '2px',marginTop: '20px',backgroundColor: 'rgb(19,13,79)'}}></div>
-                            </div>
-                        </div>
-                        <div className="col-sm-4 col-md-4 waves-effect kolom-b" data-aos="flip-up">
-                            <div className="fitur-a"></div>
-                            <div>
-                                <h4 className="text-center heading-fitur" style={{fontSize: '40px',color: 'rgb(19,13,79)'}}><strong>VALUES &nbsp;</strong></h4>
-                                <img src="assets/img/Values.png" style={{width: '90px',marginTop: '-14px'}} />
-                                <p className="text-center paragraf-fitur" style={{
-                                    fontSize: '16px',color: 'rgb(8,15,51)',marginTop: '-1px',paddingBottom: '2px'}}><strong>INSPIRE</strong><br/><strong>OVERCOME</strong><br/><strong>INNOVATE</strong><br/><strong>DISRUPT</strong><br/><br/></p>
-                                <div className="separator-fitur" style={{paddingBottom: '2px',marginTop: '23px',backgroundColor: 'rgb(19,13,79)'}}></div>
-                            </div>
-                        </div>
-                        <div className="col-sm-4 col-md-4 waves-effect kolom-c" data-aos="flip-left" style={{marginTop: '-1px'}}>
-                            <div className="fitur-a"></div>
-                            <div>
-                                <h4 className="text-center heading-fitur" style={{fontSize: '40px',color: 'rgb(19,13,79)'}}><strong>VISION &nbsp;</strong></h4>
-                                <img src="assets/img/Vision.png" style={{width: '100px',marginTop: '-51px',paddingTop: '65px',paddingBottom: '20px'}}/>
-                                <p className="text-center paragraf-fitur" style={{fontSize: '16px',color: 'rgb(8,15,51)',marginTop: '-8px',paddingBottom: '26px'}}><strong>CSA visions a future where our members become futurists and creates disruption in industries through digitalization or automation.</strong></p>
-                            </div>
-                            <div className="separator-fitur" style={{paddingTop: '2px',backgroundColor: 'rgb(19,13,79)'}}></div>
-                        </div>
-                    </div>
-                </div>
         </>
     );
 }
