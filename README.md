@@ -30,9 +30,10 @@ Source of the https://www.compscia.com website.
 
 ## Contributing
 
- 1. Fork the `develop` branch of the project on Github.
- 2. Implement features, fix issues, update documentation.
- 3. Run tests if available! (Feel free to write tests 😉).
- 4. Squash your commits into a single commit with git's interactive rebase.
- 5. Push your branch to your fork on Github.
- 6. Open a pull request from your fork into the `develop` branch.
+ 1. Fork the project on Github (https://github.com/comp-scia/www.compscia.com/fork)
+ 2. Clone and checkout the `develop` branch (`git clone --single-branch -b develop <url>`)
+ 3. Create a branch off the `develop` branch for your feature (`git checkout -b my-feature-name`)
+ 4. Run tests if available! (Feel free to write tests 😉)
+ 5. Commit changes (`git commit -m "Add new feature"`)
+ 6. Push changes to your fork (`git push origin my-feature-feature`)
+ 7. Create a Pull Request into this project's `develop` branch
