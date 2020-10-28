@@ -1,0 +1,12 @@
+.personSection {
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    padding: 0 64px;
+}
+.sectionTitle {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(40, 102, 164);
+    margin: 32px auto;
+}
