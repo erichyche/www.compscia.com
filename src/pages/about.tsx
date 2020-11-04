@@ -1,10 +1,27 @@
 import React from 'react';
+import {Person} from '../components/personCard';
+import {ContentCard} from '../components/contentCard';
+import PersonSection from '../components/personSection';
 
 export default () => {
+    let boardMembers: Person[] = [
+        {name:'Monica Lee',title:'President / Chief Executive Officer',imgUrl:'/images/board/monica.jpeg',links:{linkedin:'monica-l-15629479',instagram:'certifiedmonicalee',email:'moniblee@icloud.com'}},
+        {name:'Serigne Ousmane Ciss',title:'Vice President / Chief Operating Officer',imgUrl:'/images/board/ociss.jpg',links:{linkedin:'serigne-ousmane-kana',instagram:'certifiedmonicalee',email:'ousmanekanaciss@gmail.com'}},
+        {name:'Lex von Biedenfeld',title:'Chief Technology Officer',imgUrl:'/images/board/avonbied.jpg',links:{linkedin:'avonbied',instagram:'avonbied'}},
+        {name:'Eric Hyche',title:'Secretary',imgUrl:'/images/board/ehyche.jpg',links:{linkedin:'ericihyche',instagram:'arithmxtic',email:'ericihyche@gmail.com'}},
+        {name:'Amber Yu',title:'Chief Finance Officer',imgUrl:'/images/board/amber.jpg',links:{linkedin:'amber-yu-b7025116b',instagram:'asvon5000',email:'ambereel9@gmail.com'}},
+        {name:'Stefania Lopez-Portillo',title:'Chief Representative',imgUrl:'/images/board/sportillo.jpeg'},
+        {name:'Sirine Ennadi',title:'Chief Marketing Officer',imgUrl:'/images/board/sennadi.jpg'},
+        {name:'Al Tareen',title:'Chief Developmment Officer',imgUrl:'/images/board/altareen.png',links:{linkedin:'California',instagram:'altareen',email:'altareenk@outlook.com'}},
+        {name:'Ngolo Drissa Sanogo',title:'Chief Information Officer',imgUrl:'/images/board/dsanogo.jpg',links:{linkedin:'drissa-sanogo-a44286133',email:'drissas75@gmail.com'}},
+        {name:'Eduardo Moya',title:'Fellow',imgUrl:'/images/board/emoya.jpg',links:{linkedin:'e-moya',instagram:'ed_da_best',email:'edualomoya4@gmail.com'}}
+    ];
+    let advisors: Person[] = [
+        {name:'Samir Saber',title:['Department Chair','Digital Information and Technology'],imgUrl:'/images/board/samir.jpg',links:{linkedin:'samirsaber',phone:'7137187513',email:'samir.saber@hccs.edu'}}
+    ];
     return (
         <>
             <section style={{
-                
                 textAlign: 'center',
                 backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/datacenter.jpg")',
                 backgroundSize: 'cover'
@@ -63,6 +80,13 @@ export default () => {
                     <img src="assets/img/Vision.png" style={{width: '100px',marginTop: '-51px',paddingTop: '65px',paddingBottom: '20px'}}/>
                     <p style={{fontSize: '16px',color: 'rgb(8,15,51)',marginTop: '-8px',paddingBottom: '26px'}}><strong>CSA visions a future where our members become futurists and creates disruption in industries through digitalization or automation.</strong></p>
                 </div>
+                <ContentCard>
+                    <div></div>
+                </ContentCard>
+            </section>
+            <section>
+                <PersonSection people={boardMembers} title="Executive Board"/>
+                <PersonSection people={advisors} title="Program Advisors"/>
             </section>
         </>
     );

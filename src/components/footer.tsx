@@ -4,16 +4,16 @@ import styles from '../styles/components/footer.module.scss';
 const socialLinks = [
     {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/company/compscia'
+        link: 'https://linkedin.com/company/compscia'
     },
     {
         name: 'facebook-square',
-        link: 'https://www.facebook.com/compscia'
+        link: 'https://facebook.com/compscia'
     },
     //<i class="fa fa-linkedin-square"></i><i class="fa fa-instagram"></i><i class="fa fa-facebook"></i>
     {
         name: 'instagram-square',
-        link: 'https://www.instagram.com/comp.scia'
+        link: 'https://instagram.com/comp.scia'
     },
     {
         name: 'github-square',
