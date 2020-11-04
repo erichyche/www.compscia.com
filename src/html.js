@@ -14,16 +14,18 @@ const HTML = (props) => {
         />
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}
-          key={`body`}
-          id="___gatsby">
+      <body {...props.bodyAttributes}>
         {props.preBodyComponents}
-        { props.body }
+        <main key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: props.body }} />
         {props.postBodyComponents}
       </body>
     </html>
   );
 }
+/*
+{{props.preBodyComponents}
+{props.body}
+{props.postBodyComponents}}*/
 
 HTML.propTypes = {
   htmlAttributes: PropTypes.object,
